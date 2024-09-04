@@ -27,6 +27,7 @@ Knights of the Round Academy is a mockup of a military academy’s webpage. It i
     * General Lore: Dive into the rich history and world-building that sets the stage for our campaign.
     * Student Profiles: Meet the characters—both the players and some key NPCs—that make up the academy’s student body.
     * Mecha Info Pages: Explore the specs and backstories of the mechas piloted by our characters.
+    * "GRaiL Chatbot" interaction: a chatbot to simulate the AI of the mechas
     * And More: Additional content to bring the world to life!
 
 ________________________________________________________________________________________________________________
