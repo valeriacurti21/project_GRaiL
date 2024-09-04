@@ -39,4 +39,4 @@ See the [LICENSE](./LICENSE) file for more details.
 
 ________________________________________________________________________________________________________________
 
-### Thank you for stopping by! Whether you’re here for the TTRPG content or to watch a newbie coder in action, I hope you enjoy exploring the Knights of the Round Academy project as much as I’ve enjoyed creating it. 🚀
+### Thank you for stopping by! Whether you’re here for the TTRPG content or to watch a newbie coder in action, I hope you enjoy exploring the GRaiL project as much as I’ve enjoyed creating it. 🚀
