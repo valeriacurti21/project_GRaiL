@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GraiL Chat Interface</title>
+    <link rel="stylesheet" href="/code/css/stylesheet.css">
+</head>
+<body>
+    <div class="chat-box">
+        <h3 id="welcome-message"></h3>  <!-- Display student's name here -->
+        <div id="chat-log"></div>
+        <input type="text" id="user-input" placeholder="Ask me something..." onkeypress="handleEnter(event)">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+    <button onclick="logout()">Logout</button>
+
+
+    <script src="/code/java/script.js"></script>
+</body>
+</html>
+
