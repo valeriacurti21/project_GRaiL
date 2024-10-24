@@ -2,10 +2,10 @@
 const validCredentials = [
     { name: "Daniel Umbrenius Vom Dem Bluhendental", id: "17167" },
     { name: "Ganon Greyson", id: "09611" },
-    { name: "Grein Braveshine", id: "45725" }
+    { name: "Grein Braveshine", id: "45725" },
     { name: "Guinevere Findabair", id: "85697" },
     { name: "Piper Pond", id: "08144" },
-    { name: "Voltaire Askr", id: "05778" }
+    { name: "Voltaire Askr", id: "05778" },
     { name: "Merlin Ambrosius", id: "00000" }
 ];
 

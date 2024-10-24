@@ -1,19 +1,15 @@
 // Function to display the student's name on the index.html page
 function displayStudentName() {
-    const studentName = localStorage.getItem('studentName');  // Retrieve student name from localStorage
+    const studentName = localStorage.getItem('studentId');  // Retrieve student name from localStorage
     }
-    if (studentName) {
-        document.getElementById('welcome-message').innerHTML = `Benvenuto, ${studentName}!`;
+    if (studentId) {
+        document.getElementById('welcome-message').innerHTML = `Benvenuto, cadetto ${studentId}!`;
     }
-    if ("Voltaire Askr") {
-            document.getElementById('welcome-message').innerHTML = `Benvenuto, prof. Askr!`;
-    if ("Merlin Ambrosius") {
-                document.getElementById('welcome-message').innerHTML = `Benvenuto, preside Merlin!`;
-    } else {
+    else {
         // If no student name is found, redirect back to login page
         window.location.href = "/code/html/login.html";
     }
-}
+
 
 // Call the displayStudentName() function when index.html is loaded
 if (window.location.pathname.endsWith('/code/html/index.html')) {
