@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="/code/css/login.css"> <!-- Link to your CSS for styling -->
 </head>
 <body>
+    <!-- TEST LOGIN BASE
     <div class="login-container">
-        <h2>Benvenuti su GraiL</h2>
-        <p>Round Academy Login</p>
+        <h2>Round Academy Login</h2>
         <form id="login-form" onsubmit="handleLogin(event)">
             <input type="text" id="student-name" placeholder="Nome" required>
             <input type="password" id="student-id" placeholder="ID" required>
@@ -20,8 +20,31 @@
         </form>
         <div id="login-error" style="display: none; color:red">Nome o ID invalidi.</div>
     </div>
-
+-->
+<body>
+    <div class="flip-card" id="flip-card">
+        <div class="flip-card-inner">
+            <!-- Front Side: Icon of GraiL with animated fade-in -->
+            <div class="flip-card-front animated-dissolve" onclick="flipCard()">
+                <img src="/asset/grail_icon_color2.png" alt="GraiL Icon" class="grail-icon"> <!-- Replace with your icon path -->
+                <h2>Benvenuti in GR<span>ai</span>L</h2>
+            </div>
+            
+            <!-- Back Side: Login Form -->
+            <div class="flip-card-back">
+                <h2>Login</h2>
+                <form id="login-form" onsubmit="handleLogin(event)">
+                    <input type="text" id="student-name" placeholder="Inserire Nome" required>
+                    <input type="password" id="student-id" placeholder="Inserire ID" required>
+                    <label>
+                        <input type="checkbox" onclick="toggleIDVisibility()"> Mostra ID
+                    </label>
+                    <button type="submit">Login</button>
+                </form>
+                <div id="login-error" style="color: red; display: none;">nominativo o ID invalidi.</div>
+            </div>
+        </div>
+    </div>
     <script src="/code/java/script.js"></script> <!-- Link to your JavaScript file -->
 </body>
 </html>
-

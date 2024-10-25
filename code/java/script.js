@@ -76,3 +76,52 @@ function logout() {
     window.location.href = "/code/html/login.html";     // Redirect to login page
 }
 
+//________________________________________________________//
+
+
+// Function to flip the card
+function flipCard() {
+    const card = document.getElementById('flip-card');
+    card.classList.toggle('flip');
+}
+
+// Function to toggle the visibility of the ID field
+function toggleIDVisibility() {
+    const idField = document.getElementById('student-id');
+    idField.type = idField.type === 'password' ? 'text' : 'password';
+}
+
+// Existing handleLogin function (this handles login after the form is revealed)
+function handleLogin(event) {
+    event.preventDefault();  // Prevent form from submitting traditionally
+
+    const studentName = document.getElementById('student-name').value;
+    const studentId = document.getElementById('student-id').value;
+
+    // Check if name and ID match any entry in validCredentials
+    const user = validCredentials.find(
+        credential => credential.name === studentName && credential.id === studentId
+    );
+
+    if (user) {
+        // Store student details in localStorage
+        localStorage.setItem('studentName', studentName);
+        localStorage.setItem('studentId', studentId);
+        if (user.specialMessage) {
+            localStorage.setItem('specialMessage', user.specialMessage);
+        } else {
+            localStorage.removeItem('specialMessage');  // Remove if no special message
+        }
+
+        // Redirect to the chat interface
+        window.location.href = "index.html";
+    } else {
+        // Display error message if credentials are invalid
+        document.getElementById('login-error').textContent = 'Invalid name or student ID. Please try again.';
+        document.getElementById('login-error').style.display = 'block';
+    }
+}
+
+window.onload = function() {
+    document.querySelector('.animated-dissolve').style.animationDelay = '1s';
+};
