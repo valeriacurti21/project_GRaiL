@@ -7,17 +7,16 @@
     <link rel="stylesheet" href="/code/css/stylesheet.css">
 </head>
 <body>
-  
-    <div class="chat-box">  
-      <h3 id="welcome-message"></h3> <!-- Display student's name here -->
+    <div class="chat-box">
+        <h3 id="welcome-message"></h3> <!-- Personalized welcome message will be shown here -->
         <div id="chat-log"></div>
-        <input type="text" id="user-input" placeholder="Ask me something..." onkeypress="handleEnter(event)">
+        <input type="text" id="user-input" placeholder="Come posso aiutarti?" onkeypress="handleEnter(event)">
         <button onclick="sendMessage()">Send</button>
     </div>
+
     <button onclick="logout()">Logout</button>
 
 
     <script src="/code/java/script.js"></script>
 </body>
 </html>
-

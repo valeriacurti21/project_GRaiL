@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GraiL - Student Login</title>
+    <title>GraiL - Login</title>
     <link rel="stylesheet" href="/code/css/login.css"> <!-- Link to your CSS for styling -->
 </head>
 <body>
     <div class="login-container">
-        <h2>Welcome to GraiL</h2>
-        <p>Futuristic Military Academy Student Login</p>
+        <h2>Benvenuti su GraiL</h2>
+        <p>Round Academy Login</p>
         <form id="login-form" onsubmit="handleLogin(event)">
-            <input type="text" id="student-name" placeholder="Enter your name" required>
-            <input type="text" id="student-id" placeholder="Enter your ID" required>
+            <input type="text" id="student-name" placeholder="Nome" required>
+            <input type="password" id="student-id" placeholder="ID" required>
+            <label>
+                <input type="checkbox" onclick="toggleIDVisibility()"> Mostra ID
+            </label>
             <button type="submit">Login</button>
         </form>
-        <div id="login-error" style="color: red; display: none;">Invalid name or student ID.</div>
+        <div id="login-error" style="display: none; color:red">Nome o ID invalidi.</div>
     </div>
 
-    <script src="/code/java/login-script.js"></script> <!-- Link to your JavaScript file -->
+    <script src="/code/java/script.js"></script> <!-- Link to your JavaScript file -->
 </body>
 </html>
 
