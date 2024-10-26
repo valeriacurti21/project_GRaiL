@@ -123,5 +123,5 @@ function handleLogin(event) {
 }
 
 window.onload = function() {
-    document.querySelector('.animated-dissolve').style.animationDelay = '1s';
+    document.querySelector('.animated-dissolve').style.animationDelay = '0.1s';
 };
