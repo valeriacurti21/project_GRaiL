@@ -14,15 +14,14 @@ $cadet-gray: rgba(118, 148, 159, 1);
 $charcoal: rgba(55, 67, 91, 1);
 */
 
-@font-face
-@font-face
+
 
 body{
   background-color: white;
 }
 
 .flip-card-front h2{
-
+font-size: medium;
 }
 .flip-card-front span {
   color: rgb(253, 27, 27)
@@ -108,6 +107,25 @@ body{
   transform: rotateY(180deg);
   padding: 20px;
 }
+
+/* Container for the checkbox label to keep it aligned to the left */
+.show-id-label {
+  display: inline-flex;      /* Keeps checkbox and label text in a single line */
+  align-items: center;       /* Vertically centers checkbox with text */
+  font-size: 14px;
+  color: #eeeeeeff;
+  margin: 0;
+  padding: 0;
+  width: auto;               /* Allows container to resize based on content */
+  white-space: nowrap;       /* Prevents text wrapping onto multiple lines */
+}
+
+/* Style for the checkbox itself */
+.show-id-label input[type="checkbox"] {
+  margin-right: 5px;         /* Small space between checkbox and label text */
+  padding: 0;
+}
+
 
 /* Input and Button Styles */
 input, button {
